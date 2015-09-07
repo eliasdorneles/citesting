@@ -24,6 +24,7 @@ openssl aes-256-cbc -K $encrypted_ef748fe1608c_key -iv $encrypted_ef748fe1608c_i
 
 echo "Adding key..."
 chmod 600 .travis/deploy_key.pem
+eval $(ssh-agent)
 ssh-add .travis/deploy_key.pem
 
 echo "Pushing to master..."
