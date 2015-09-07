@@ -7,6 +7,6 @@ python: 2.7
 script: echo Build passed
 deploy:
   provider: script
-  script: deploy.sh
+  script: ./deploy.sh
   on:
     branch: development
