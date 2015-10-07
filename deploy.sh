@@ -28,4 +28,4 @@ eval $(ssh-agent)
 ssh-add .travis/deploy_key.pem
 
 echo "Pushing to master..."
-git push deploy master:master
+git push --force deploy master:master
