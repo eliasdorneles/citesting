@@ -6,7 +6,7 @@ deploy:
   provider: script
   script: ./deploy.sh
   true:
-    branch: development
+    branch: anotherbranch
 language: python
 python: 2.7
 script: echo Build passed
